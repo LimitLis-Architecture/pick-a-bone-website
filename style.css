@@ -1,83 +1,85 @@
-/* Core Variables & BBQ Theme Colors */
-:root {
-    --bbq-red: #8B0000;
-    --smoke-white: #fdfbf7;
-    --charcoal: #2b2b2b;
-}
-
-/* Base Styles */
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: var(--smoke-white);
-    color: var(--charcoal);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Centered Content Container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Typography */
-h1, h2, h3 {
-    color: var(--bbq-red);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 30px;
-}
-
-p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-/* Responsive Images (Menus, Trailer, Elephant) */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Softens the edges slightly */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a nice depth */
-    margin: 15px 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Specific Logo Sizing */
-.logo {
-    max-width: 300px;
-    box-shadow: none; /* Removes shadow from the logo if it has a transparent/white background */
-    border-radius: 0;
-}
-
-/* Button Styling for the Google Maps Link */
-a.map-btn {
-    display: inline-block;
-    background-color: var(--bbq-red);
-    color: #ffffff;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    margin: 20px 0;
-    transition: background-color 0.3s ease;
-}
-
-a.map-btn:hover {
-    background-color: #5c0000; /* Darkens on hover */
-}
-
-/* Footer styling */
-footer {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 2px solid #ddd;
-    font-size: 0.9rem;
-    color: #666;
-}
+/* CSS extracted from index.html */
+    :root {
+      --bbq-red: #B80000;
+      --smoke-white: #f0f0f0;
+      --charcoal: #2b2b2b;
+    }
+    
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: var(--smoke-white);
+      color: var(--charcoal);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1, h2, h3 {
+      color: var(--bbq-red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 30px;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    
+    a {
+      color: var(--bbq-red);
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .menu-section {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    
+    .menu-section h2 {
+      border-bottom: 2px solid var(--bbq-red);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .menu-item {
+      margin-bottom: 15px;
+    }
+    
+    .menu-item h3 {
+      margin-bottom: 5px;
+      color: #333; /* Darker for item titles */
+    }
+    
+    .menu-item p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 5px;
+    }
+    
+    .price {
+      font-weight: bold;
+      color: var(--bbq-red);
+    }
+    
+    .logo {
+      margin-bottom: 20px;
+      max-width: 200px;
+      height: auto;
+    }
+    /* End of CSS from index.html */
