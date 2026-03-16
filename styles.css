@@ -396,8 +396,6 @@ body {
 .footer {
     background-color: var(--darker-bg);
     padding: 30px 20px 20px;
-    position: sticky;
-    bottom: 0;
     border-top: 4px solid var(--primary-orange);
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
 }
