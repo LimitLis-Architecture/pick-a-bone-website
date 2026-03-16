@@ -1,92 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pick-a-Bone BBQ | Fenton, MO | Order Online</title>
-    <style>
-        :root {
-            --bbq-orange: #ff6600; 
-            --dark-pit: #1a1a1a;
-            --smoke-white: #f5f5f5;
-            --gold: #ffca28;
-        }
-        body {
-            background-color: var(--dark-pit);
-            color: var(--smoke-white);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding-bottom: 110px; /* Extra space for the 3-button bar */
-        }
-        header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('trailer.webp');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding: 60px 20px;
-            border-bottom: 5px solid var(--bbq-orange);
-        }
-        .logo-img { max-width: 200px; border-radius: 10px; border: 3px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-        .btn-order { display: inline-block; background-color: var(--gold); color: var(--dark-pit); padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; font-size: 1.2rem; transition: transform 0.2s; }
-        .btn-order:active { transform: scale(0.95); }
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .card { background: #262626; padding: 25px; border-radius: 12px; border-top: 4px solid var(--bbq-orange); margin-bottom: 25px; }
-        h2 { color: var(--bbq-orange); border-bottom: 1px solid #444; padding-bottom: 10px; text-transform: uppercase; margin-top: 0; }
-        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-        .menu-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dotted #444; }
-        .price { color: var(--gold); font-weight: bold; }
-        .location-img { width: 100%; max-width: 450px; border-radius: 8px; margin: 15px 0; border: 1px solid #444; }
-        .action-bar { position: fixed; bottom: 0; width: 100%; background: var(--bbq-orange); display: flex; justify-content: space-around; padding: 15px 0; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.5); align-items: center;}
-        .action-bar a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-align: center; }
-        .nav-btn-main { background: white !important; color: var(--bbq-orange) !important; padding: 8px 15px; border-radius: 20px; }
-    </style>
-    <link rel="stylesheet" href="style.css"></head>
-<body>
-
-<header>
-    <img src="logo.jpg" alt="Pick-a-Bone BBQ Logo" class="logo-img">
-    <h2 style="color:white; border:none; margin-top:15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Authentic Roadside BBQ Since 2006</h2>
-    <a href="https://pickabone.netwaiter.com/fenton/" class="btn-order">🚀 ORDER ONLINE NOW</a>
-</header>
-
-<div class="container">
-    <div class="card" style="text-align: center; background: #333;">
-        <p style="margin:0; font-weight:bold;">📍 104 Schneider Dr, Fenton, MO 63026</p>
-        <p style="margin:5px 0 0 0; color: var(--gold);">Open Wed-Sun | Check current hours below</p>
-    </div>
-
-    <div class="menu-grid">
-        <div class="card">
-            <h2>🔥 Popular Items</h2>
-            <div class="menu-item"><span>Pulled Pork Sandwich</span><span class="price">$6.99</span></div>
-            <div class="menu-item"><span>Smoked Turkey Leg</span><span class="price">$10.49</span></div>
-            <div class="menu-item"><span>Pork Steak (1.5" Thick)</span><span class="price">$11.49</span></div>
-            <div class="menu-item"><span>Full Slab Ribs</span><span class="price">$22.25</span></div>
-            <div class="menu-item"><span>White Chicken Chili (Seasonal)</span><span class="price">From $2.95</span></div>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pick-a-Bone BBQ | Fenton, MO | Order Online</title>
+        <link rel="stylesheet" href="style.css"></head>
+    <body>
+        <header>
+            <img src="logo.jpg" alt="Pick-a-Bone BBQ Logo" class="logo">
+            <h2>Authentic Roadside BBQ Since 2006</h2>
+            <a href="https://pickabone.netwaiter.com/Fenton/" class="btn-order">🛒 ORDER ONLINE NOW</a>
+        </header>
+    
+        <div class="container">
+            
+            <p style="text-align:center; background:#333; color:#fff; padding: 5px;">
+                <span style="margin:0 8px; font-weight:bold;">📍 104 Schneider Dr, Fenton, MO 63026</span> | 
+                <span style="margin:0 8px 0 0; font-weight:bold;">📅 Open Wed-Sun | Check current hours below</span>
+            </p>
+    
+            <div class="menu-grid">
+                <div class="card">
+                    <h2>🍖 Popular Items</h2>
+                    <div class="menu-item"><h3>Smoked Pulled Pork Sandwich</h3><span class="price">$6.99</span></div>
+                    <div class="menu-item"><h3>Smoked Turkey Legs</h3><span class="price">$10.49/each</span></div>
+                    <div class="menu-item"><h3>Pork Steak (1.5" Thick)</h3><span class="price">$11.49</span></div>
+                    <div class="menu-item"><h3>Full Slab Ribs</h3><span class="price">$22.25</span></div>
+                    <div class="menu-item"><h3>White Chicken Chili (Seasonal)</h3><span class="price">from $2.95</span></div>
+                </div>
+    
+                <div class="card">
+                    <h2>🍟 Sides & Extras</h2>
+                    <div class="menu-item"><h3>Potato Salad</h3><span class="price">$2.99</span></div>
+                    <div class="menu-item"><h3>Baked Beans</h3><span class="price">$2.99</span></div>
+                    <div class="menu-item"><h3>Cole Slaw</h3><span class="price">$2.99</span></div>
+                    <div class="menu-item"><h3>Fries</h3><span class="price">$2.99</span></div>
+                    <div class="menu-item"><h3>Green Beans</h3><span class="price">$2.99</span></div>
+                    <div class="menu-item"><h3>Applesauce</h3><span class="price">$1.99</span></div>
+                    <div class="menu-item"><h3>Corn on the Cob</h3><span class="price">$2.49</span></div>
+                    <div class="menu-item"><h3>Garlic Bread</h3><span class="price">$0.99</span></div>
+                </div>
+                
+                <div class="card location-img">
+                    <img src="elephant.webp" alt="Elephant Rock" style="width:100%; max-width:400px; border-radius:8px;">
+                </div>
+                
+                <div class="card hours-img">
+                     <img src="hours.webp" alt="Store Hours" style="width:100%; max-width:400px; border-radius:8px;">
+                </div>
+    
+                <div class="card">
+                    <h2>🥤 Drinks</h2>
+                    <div class="menu-item"><h3>Fountain Drinks</h3><span class="price">$2.49</span></div>
+                    <div class="menu-item"><h3>Bottled Water</h3><span class="price">$1.99</span></div>
+                    <div class="menu-item"><h3>Iced Tea (Sweet/Unsweet)</h3><span class="price">$2.49</span></div>
+                </div>
+    
+                <div class="card menu-img-1">
+                     <img src="menu1.webp" alt="Menu part 1" style="width:100%; max-width:400px; border-radius:8px;">
+                </div>
+    
+                <div class="card menu-img-2">
+                     <img src="menu2.webp" alt="Menu part 2" style="width:100%; max-width:400px; border-radius:8px;">
+                </div>
+            </div>
+            
         </div>
-
-        <div class="card">
-            <h2>🥗 Sides & Extras</h2>
-            <div class="menu-item"><span>Potato Salad</span><span class="price">$2.99</span></div>
-            <div class="menu-item"><span>Baked Beans</span><span class="price">$2.99</span></div>
-            <div class="menu-item"><span>Cole Slaw</span><span class="price">$2.99</span></div>
-            <div class="menu-item"><span>Green Beans</span><span class="price">$2.99</span></div>
-            <div class="menu-item"><span>Drinks</span><span class="price">$1.50</span></div>
+        
+        <div class="action-bar">
+            We're located near Elephant Rock State Park!
         </div>
-    </div>
-
-    <div class="card" style="text-align:center;">
-        <h2>📅 Location & Hours</h2>
-        <img src="Hours.webp" alt="Pick-a-Bone Hours" class="location-img">
-        <p>We are the roadside legend right by the <strong>Pink Elephant</strong>!</p>
-        <img src="elephant.webp" alt="Pink Elephant Landmark" class="location-img">
-    </div>
-</div>
-
-<div class="action-bar">
-    <a href="tel:3147247631">📞 CALL</a>
-    <a href="https://pickabone.netwaiter.com/fenton/" class="nav-btn-main">🛒 ORDER ONLINE</a>
-    <a href="https://www.google.com/maps/search/pick+a+bone+bbq+fenton+mo" target="_blank">🗺️ MAP</a>
-
-</body>
-</html>
+    
+        <div class="nav-main">
+            <a href="#popular">Popular Items</a> | <a href="#sides">Sides</a> | <a href="#drinks">Drinks</a> | <a href="#location">Location & Hours</a>
+        </div>
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <video width="320" height="240" controls autoplay muted>
+              <source src="trailer.webp" type="video/webp">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+    
+    </body>
+    </html>
+    
