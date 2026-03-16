@@ -85,6 +85,13 @@ body {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .hiring-ribbon {
+        animation: none;
+        transition: none;
+    }
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--medium-bg) 0%, var(--dark-bg) 100%);
